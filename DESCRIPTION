@@ -1,0 +1,15 @@
+Package: publishr
+Type: Package
+Title: publishr
+Version: 0.1.0
+Author: Hao Deng
+Maintainer: Hao Deng <drdenghao@gmail.com>
+Description: A package to create quality publications.
+License: This package will be under MIT license.
+Encoding: UTF-8
+LazyData: true
+Import: 
+    stats, 
+    magrittr
+Depends: magrittr
+RoxygenNote: 7.0.2
