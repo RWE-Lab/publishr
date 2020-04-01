@@ -5,11 +5,8 @@ Version: 0.1.0
 Author: Hao Deng
 Maintainer: Hao Deng <drdenghao@gmail.com>
 Description: A package to create quality publications.
-License: This package will be under MIT license.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Import: 
-    stats, 
-    magrittr
-Depends: magrittr
-RoxygenNote: 7.0.2
+Imports: stats, magrittr, ggplot2
+RoxygenNote: 7.1.0
