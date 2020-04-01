@@ -1,4 +1,4 @@
-# publishr 
+# PUBLISHR 
 A package of collected functions for medical publication
 
 To install:
