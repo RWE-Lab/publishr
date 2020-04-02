@@ -2,10 +2,20 @@
 #' @title cckable
 #' @description kable wrapper functions
 #' @param data a dataframe to be printed
+#' @param format format of table output
+#' @param digits digits
+#' @param row.names show row.names
+#' @param col.names show col.names
+#' @param caption table caption
 #' @import knitr kableExtra magrittr
 #' @export cckable
 
-cckable <- function(data) {
+cckable <- function(data,
+                    format = "html",
+                    digits = 4,
+                    row.names = F,
+                    col.names = T,
+                    caption = "") {
 dat1 = data %>% as.data.frame()
 cckable = kable(dat1) %>%
   kable_styling(bootstrap_options = c("bordered", "condensed"),

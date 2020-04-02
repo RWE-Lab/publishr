@@ -4,10 +4,27 @@
 \alias{cckable}
 \title{cckable}
 \usage{
-cckable(data)
+cckable(
+  data,
+  format = "html",
+  digits = 4,
+  row.names = F,
+  col.names = T,
+  caption = ""
+)
 }
 \arguments{
 \item{data}{a dataframe to be printed}
+
+\item{format}{format of table output}
+
+\item{digits}{digits}
+
+\item{row.names}{show row.names}
+
+\item{col.names}{show col.names}
+
+\item{caption}{table caption}
 }
 \description{
 kable wrapper functions
