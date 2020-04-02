@@ -4,14 +4,7 @@
 \alias{cckable}
 \title{cckable}
 \usage{
-cckable(
-  data,
-  format = "html",
-  digits = 4,
-  row.names = F,
-  col.names = T,
-  caption = ""
-)
+cckable(data, format = "html", digits = 4, row.names = F, caption = "Table")
 }
 \arguments{
 \item{data}{a dataframe to be printed}
@@ -21,8 +14,6 @@ cckable(
 \item{digits}{digits}
 
 \item{row.names}{show row.names}
-
-\item{col.names}{show col.names}
 
 \item{caption}{table caption}
 }
