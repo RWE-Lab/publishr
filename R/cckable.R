@@ -17,7 +17,12 @@ cckable <- function(data,
                     col.names = T,
                     caption = "") {
 dat1 = data %>% as.data.frame()
-cckable = kable(dat1) %>%
+cckable = kable(dat1,
+                format = format,
+                digits = digits,
+                row.names = row.names,
+                col.names = col.names,
+                caption = caption) %>%
   kable_styling(bootstrap_options = c("bordered", "condensed"),
                 full_width = F,font_size = 11,stripe_color = "black") %>%
   column_spec(1:ncol(dat1),border_left = T,border_right = T) %>%
