@@ -8,6 +8,6 @@ summary2_glm = function(mod) {
   out1 =
   cbind(exp(cbind(OR = coef(mod),
                   confint.default(mod))),
-        P.value = coef(summary(mod))[,4] %>% round(.,5))
+        P.value = round(coef(summary(mod))[,4],5))
   return(out1)
 }
