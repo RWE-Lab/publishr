@@ -8,7 +8,7 @@
 cckable <- function(data) {
 dat1 = data %>% as.data.frame()
 cckable = kable(dat1) %>%
-  kable_styling(bootstrap_options = c("compact"),
+  kable_styling(bootstrap_options = c("bordered", "condensed"),
                 full_width = F,font_size = 11,stripe_color = "black") %>%
   column_spec(1:ncol(dat1),border_left = T,border_right = T) %>%
   row_spec(row = 0,bold = F,background = "black",color = "white",align = "center",
