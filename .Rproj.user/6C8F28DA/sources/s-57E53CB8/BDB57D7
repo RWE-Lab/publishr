@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1293870088",
+    "hash" : "0",
     "id" : "BDB57D7",
     "lastKnownWriteTime" : 1585836724,
     "last_content_update" : 1585836724076,
     "path" : "~/Desktop/publishr/R/cckable.R",
     "project_path" : "R/cckable.R",
     "properties" : {
-        "cursorPosition" : "16,17",
-        "scrollLine" : "0",
+        "cursorPosition" : "10,49",
+        "scrollLine" : "3",
         "tempName" : "Untitled1"
     },
     "read_only" : false,
