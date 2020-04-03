@@ -13,6 +13,10 @@ themec_yellow(
   plot.footnote.textsize = 12,
   legend.position = "right",
   legend.textsize = 12,
+  legend.background.fill = "transparent",
+  legend.background.color = "transparent",
+  legend.key.fill = "transparent",
+  legend.key.color = "transparent",
   strip.textsize = 12
 )
 }
@@ -32,6 +36,14 @@ themec_yellow(
 \item{legend.position}{legend.position = "top" or "right" or others}
 
 \item{legend.textsize}{legend.textsize}
+
+\item{legend.background.fill}{legend.background.fill}
+
+\item{legend.background.color}{legend.background.color}
+
+\item{legend.key.fill}{legend.key.fill}
+
+\item{legend.key.color}{legend.key.color}
 
 \item{strip.textsize}{strip.textsize}
 }

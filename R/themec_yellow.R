@@ -9,20 +9,27 @@
 #' @param plot.footnote.textsize plot.footnote.textsize
 #' @param legend.position legend.position = "top" or "right" or others
 #' @param legend.textsize legend.textsize
+#' @param legend.background.fill legend.background.fill
+#' @param legend.background.color legend.background.color
+#' @param legend.key.fill legend.key.fill
+#' @param legend.key.color legend.key.color
 #' @param strip.textsize strip.textsize
 #' @import ggplot2
 #' @export themec_yellow
 
-# old school green-yellow theme
 themec_yellow = function(panel.aspect.ratio = 1,
-                         axis.title.textsize = 12,
-                         plot.tag.textsize = 14,
-                         plot.title.textsize = 14,
-                         plot.subtitle.textsize = 12,
-                         plot.footnote.textsize = 12,
-                         legend.position = "right",
-                         legend.textsize = 12,
-                         strip.textsize = 12) {
+                     axis.title.textsize = 12,
+                     plot.tag.textsize = 14,
+                     plot.title.textsize = 14,
+                     plot.subtitle.textsize = 12,
+                     plot.footnote.textsize = 12,
+                     legend.position = "right",
+                     legend.textsize = 12,
+                     legend.background.fill = "transparent",
+                     legend.background.color = "transparent",
+                     legend.key.fill = "transparent",
+                     legend.key.color = "transparent",
+                     strip.textsize = 12) {
   themec_yellow = theme_bw() +
     theme(aspect.ratio = panel.aspect.ratio,
           text = element_text(family = "Arial"),
@@ -42,6 +49,9 @@ themec_yellow = function(panel.aspect.ratio = 1,
           plot.tag = element_text(size = plot.tag.textsize,face = "bold",family = "Arial"),
           legend.title = element_text(size = legend.textsize,face = "bold",family = "Arial Narrow"),
           legend.position = legend.position,
-          legend.text = element_text(size = legend.textsize,family = "Arial Narrow"))
+          legend.background = element_rect(fill = legend.background.fill,colour = legend.background.color),
+          legend.key = element_rect(fill = legend.key.fill,colour = legend.key.color),
+          legend.text = element_text(size = legend.textsize,family = "Arial Narrow")
+    )
   return(themec_yellow)
 }
