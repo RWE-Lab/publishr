@@ -8,5 +8,5 @@ Description: A package to create quality publications.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: stats, magrittr, ggplot2,knitr,kableExtra
+Imports: stats, magrittr, ggplot2,knitr,kableExtra,tibble,scales,dplyr
 RoxygenNote: 7.1.0
