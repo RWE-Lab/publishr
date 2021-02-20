@@ -31,7 +31,7 @@ themec_bw = function(panel.aspect.ratio.height.weight = 1,
                      legend.key.color = "transparent",
                      strip.textsize = 12) {
   themec_bw = theme_bw() +
-    theme(aspect.ratio = panel.aspect.ratio,
+    theme(aspect.ratio = panel.aspect.ratio.height.weight,
           text = element_text(family = "Arial"),
           strip.background = element_rect(linetype = "solid",
                                           color = "black",
