@@ -17,7 +17,7 @@
 #' @import ggplot2
 #' @export themec_bw
 
-themec_bw = function(panel.aspect.ratio = 1,
+themec_bw = function(panel.aspect.ratio.height.weight = 1,
                      axis.title.textsize = 12,
                      plot.tag.textsize = 14,
                      plot.title.textsize = 14,
@@ -41,7 +41,7 @@ themec_bw = function(panel.aspect.ratio = 1,
           panel.border = element_rect(colour = "black",size = 0.5),
           axis.line = element_line(colour = "black",size = 0.2),
           panel.grid = element_line(colour = "white",size = 0.3),
-          panel.background = element_rect(fill = "#F9F6F7"),
+          panel.background = element_rect(fill = "#ebebeb"),
           plot.title = element_text(size = plot.title.textsize,face = "bold",family = "Arial Narrow"),
           plot.subtitle = element_text(size = plot.subtitle.textsize,face = "italic",family = "Arial Narrow"),
           plot.caption = element_text(size = plot.footnote.textsize,family = "Arial Narrow",hjust = 0),
